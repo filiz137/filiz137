@@ -43,6 +43,7 @@ main {
 }
 
 header {
+	position: relative;
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
@@ -50,6 +51,7 @@ header {
 	order: 1;
 	padding: 0 $pagepad;
 	height: $pagepad;
+	z-index: 999;
 	div {
 		display: flex;
 		justify-content: flex-start;
@@ -150,6 +152,7 @@ section {
 }
 
 footer {
+	position: relative;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-end;
@@ -158,6 +161,7 @@ footer {
 	height: $pagepad;
 	line-height: $pagepad;
 	font-size: 20px;
+	z-index: 999;
 	cite {
 		@include font-size(11px, $pagepad);
 		font-style: normal;

@@ -6,10 +6,10 @@
       {% endif %}
     {% endfor %}
   </div>
-  
+
   <nav>
     {% for item in site.social %}
-      <a href="{{ item.url }}" class="social {{ item.class }}">
+      <a href="{{ item.url }}" target="_blank" class="social {{ item.class }}">
         {% include {{ item.class | prepend: 'social/' | append: '.svg' }} %}
       </a>
     {% endfor %}
