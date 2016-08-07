@@ -1,0 +1,29 @@
+$mq-mobile-portrait: 320px !default;
+$mq-mobile-landscape: 480px !default;
+$mq-tablet-portrait: 768px !default;
+$mq-tablet-landscape: 1024px !default;
+$mq-desktop: 1240px !default;
+
+// Both portrait and landscape
+@mixin mobile-only {
+	@media (max-width : $mq-mobile-landscape) {
+		@content;
+	}
+}
+
+@function calculateRemSize($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@function calculateRemHeight($height) {
+  $remSize: 0.125 * $height;
+  @return $remSize;
+}
+
+@mixin font-size($size: 12px, $height: 16px) {
+  font-size: $size;
+  font-size: calculateRemSize($size);
+  line-height: $height;
+  line-height: calculateRemSize($height);
+}

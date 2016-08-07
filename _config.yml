@@ -14,8 +14,21 @@ title: Filiz Altıntürk
 #   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://filizaltinturk.com" # the base hostname & protocol for your site
-twitter_username: Filiz_Altinturk
-github_username:  filiz137
+
+social:
+  - title: Twitter
+    url: https://twitter.com/Filiz_Altinturk
+    class: twitter
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/filizaltinturk
+    class: linkedin
+  - title: GitHub
+    url: https://github.com/filiz137
+    class: github
 
 # Build settings
 markdown: kramdown
+
+sass:
+  style: compressed
+  sass_dir: _sass
