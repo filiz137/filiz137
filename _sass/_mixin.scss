@@ -26,4 +26,6 @@ $mq-desktop: 1240px !default;
   font-size: calculateRemSize($size);
   line-height: $height;
   line-height: calculateRemSize($height);
+	font-feature-settings: "kern" 1;
+  font-kerning: normal;
 }

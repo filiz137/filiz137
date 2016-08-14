@@ -26,6 +26,28 @@ social:
     url: https://github.com/filiz137
     class: github
 
+share:
+  - title: Twitter
+    url: https://twitter.com/intent/tweet/?
+    text: text=Checkout Filiz Altinturk's Portfolio Page&url=http://filizaltinturk.com
+    class: twitter
+  - title: LinkedIn
+    url: https://www.linkedin.com/shareArticle?mini=true&amp;
+    text: url=http://filizaltinturk.com&title=Checkout Filiz Altinturk's Portfolio Page&summary=Checkout Filiz Altinturk's Portfolio Page&source=http://filizaltinturk.com
+    class: linkedin
+  - title: Whatsapp
+    url: whatsapp://send?
+    text: text=Checkout Filiz Altinturk's Portfolio Page http://filizaltinturk.com
+    class: whatsapp
+  - title: Pinterest
+    url: https://pinterest.com/pin/create/button/?
+    text: url=http://filizaltinturk.com&media=http://filizaltinturk.com&summary=Checkout Filiz Altinturk's Portfolio Page
+    class: pinterest
+  - title: Email
+    url: mailto:?
+    text: subject=Filiz Altinturk filizaltinturk.com&body=Checkout Filiz Altinturk's Portfolio Page http://filizaltinturk.com
+    class: email
+
 # Build settings
 markdown: kramdown
 

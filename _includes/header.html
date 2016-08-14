@@ -1,6 +1,7 @@
 <header>
   <div>
-    {% for pages in site.pages %}
+    {% assign sorted = (site.pages | sort: 'order') %}
+    {% for pages in sorted %}
       {% if pages.title %}
       <a href="{{ pages.url | prepend: site.baseurl }}">{{ pages.title }}</a>
       {% endif %}

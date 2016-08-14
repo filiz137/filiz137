@@ -2,10 +2,24 @@
 layout: default
 title: Contact
 permalink: /contact/
+order: 3
 ---
 
 <section class="contact">
   <div>
-    Contact
+    <img src="/img/contact.png" alt="Contact with Filiz Altıntürk">
+  </div>
+  <div>
+    <h1>Contact</h1>
+    <p class="text">
+      Lorem ipsum dolor sit amet, <span class="social "></span> consectetur adipisicing elit. Autem dolores dicta, voluptatem nobis excepturi deleniti in ea omnis enim natus suscipit repudiandae maxime. Sapiente delectus beatae dolor, excepturi assumenda ipsam!
+    </p>
+    <nav class="sharing">
+      {% for item in site.share %}
+        <a href="{{ item.url }}{{ item.text | uri_escape }}" target="_blank" class="share {{ item.class }}">
+          {% include {{ item.class | prepend: 'social/' | append: '.svg' }} %}
+        </a>
+      {% endfor %}
+    </nav>
   </div>
 </section>
