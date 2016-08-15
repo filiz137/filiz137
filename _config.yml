@@ -16,12 +16,15 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://filizaltinturk.com" # the base hostname & protocol for your site
 
 social:
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/filizaltinturk
+    class: linkedin-alt
   - title: Twitter
     url: https://twitter.com/Filiz_Altinturk
     class: twitter
-  - title: LinkedIn
-    url: https://www.linkedin.com/in/filizaltinturk
-    class: linkedin
+  - title: Skype
+    url: skype:filiz.altinturk?userinfo
+    class: skype
   - title: GitHub
     url: https://github.com/filiz137
     class: github
@@ -36,7 +39,7 @@ share:
     text: url=http://filizaltinturk.com&title=Checkout Filiz Altinturk's Portfolio Page&summary=Checkout Filiz Altinturk's Portfolio Page&source=http://filizaltinturk.com
     class: linkedin
   - title: Whatsapp
-    url: whatsapp://send?
+    url: whatsapp://send/905549020202/?
     text: text=Checkout Filiz Altinturk's Portfolio Page http://filizaltinturk.com
     class: whatsapp
   - title: Pinterest

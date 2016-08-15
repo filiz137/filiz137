@@ -1,0 +1,83 @@
+section {
+	&.contact {
+		background-color: $contactColor;
+		div {
+			position: relative;
+			display: flex;
+			flex-basis: 100%;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			padding: 20px;
+			&:first-child {
+				align-self: center;
+			}
+			h1 {
+				margin: 0;
+				padding: 0;
+				color: rgba(#000, .6);
+				font-family: $baseff;
+				@include font-size(60px, 68px);
+			}
+			p {
+				margin: 0;
+				padding: 0;
+				color: rgba(#000, .8);
+				font-family: $baseff;
+				@include font-size(14px, 20px);
+			}
+			.sharing {
+				display: flex;
+				flex: 1 1 100%;
+				flex-direction: row;
+				justify-content: flex-start;
+				margin: 10px 0;
+				a {
+					margin: 0 10px 0 0;
+					padding: 0;
+					&.share {
+						color: $headerColor;
+						fill: currentColor;
+						svg {
+							width: 14px;
+							height: auto;
+						}
+						&.twitter {
+							&:hover {
+								color: $twitter;
+							}
+						}
+						&.linkedin {
+							&:hover {
+								color: $linkedin;
+							}
+						}
+						&.whatsapp {
+							&:hover {
+								color: $whatsapp;
+							}
+						}
+						&.pinterest {
+							&:hover {
+								color: $pinterest;
+							}
+						}
+						&.email {
+							&:hover {
+								color: $email;
+							}
+						}
+						&.codepen {
+							&:hover {
+								color: $codepen;
+							}
+						}
+					}
+				}
+			}
+			img {
+				height: 80vh;
+			}
+		}
+	}
+}

@@ -7,19 +7,31 @@ order: 3
 
 <section class="contact">
   <div>
-    <img src="/img/contact.png" alt="Contact with Filiz Altıntürk">
-  </div>
-  <div>
-    <h1>Contact</h1>
-    <p class="text">
-      Lorem ipsum dolor sit amet, <span class="social "></span> consectetur adipisicing elit. Autem dolores dicta, voluptatem nobis excepturi deleniti in ea omnis enim natus suscipit repudiandae maxime. Sapiente delectus beatae dolor, excepturi assumenda ipsam!
-    </p>
-    <nav class="sharing">
-      {% for item in site.share %}
-        <a href="{{ item.url }}{{ item.text | uri_escape }}" target="_blank" class="share {{ item.class }}">
-          {% include {{ item.class | prepend: 'social/' | append: '.svg' }} %}
+    <div class="photo">
+      <img src="/img/contact.png" alt="Contact with Filiz Altıntürk">
+    </div>
+    <div class="content">
+      <h1>CONTACT</h1>
+      <p class="text">
+        Let's keep in touch! If you would like to collaborate or just say 'hello', you can reach me at
+        <a href="#" class="social email">
+          info@filizaltinturk.com
         </a>
-      {% endfor %}
-    </nav>
+        <br>
+        <br>
+        For more about me, I'm also on <a href="#" class="social linkedin">{% include social/linkedin-alt.svg %}LinkedIn</a> <a href="#" class="social twitter">{% include social/twitter.svg %}Twitter</a> <a href="#" class="social codepen">{% include social/codepen.svg %}Codepen</a>
+      </p>
+    </div>
   </div>
 </section>
+
+
+{% comment %}
+<nav class="sharing">
+  {% for item in site.share %}
+    <a href="{{ item.url }}{{ item.text | uri_escape }}" target="_blank" class="share {{ item.class }}">
+      {% include {{ item.class | prepend: 'social/' | append: '.svg' }} %}
+    </a>
+  {% endfor %}
+</nav>
+{% endcomment %}

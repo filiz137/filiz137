@@ -1,0 +1,43 @@
+section {
+	&.about {
+		background-color: $aboutColor;
+		overflow: hidden;
+		overflow-y: auto;
+		div {
+			div {
+				position: relative;
+				display: flex;
+				flex-basis: 400px;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				padding: 20px;
+				font-family: $baseff;
+				h1 {
+					margin: 0;
+					padding: 0;
+					color: rgba(#000, .6);
+					font-family: $baseff;
+					@include font-size(60px, 68px);
+					text-align: center;
+				}
+				p {
+					font-family: Arial;
+					@include font-size(14px, 20px);
+					color: darken($aboutColor, 40%);
+					text-align: center;
+					columns: 2 20vw;
+					column-gap: 40px;
+					column-rule: 2px solid darken($aboutColor, 40%);
+					text-align: left;
+					@include tablet-only {
+						columns: 3 20vw;
+					}
+					@include mobile-only {
+						columns: 1 100vw;
+					}
+				}
+			}
+		}
+	}
+}

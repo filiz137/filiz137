@@ -3,14 +3,16 @@
     {% assign sorted = (site.pages | sort: 'order') %}
     {% for pages in sorted %}
       {% if pages.title %}
-      <a href="{{ pages.url | prepend: site.baseurl }}">{{ pages.title }}</a>
+      <a href="{{ pages.url | prepend: site.baseurl }}" {% if page.url == pages.url %}class="{{pages.title | downcase}} active"{% endif %}>
+        {{ pages.title }}
+      </a>
       {% endif %}
     {% endfor %}
   </div>
 
   <nav>
     {% for item in site.social %}
-      <a href="{{ item.url }}" target="_blank" class="social {{ item.class }}">
+      <a href="{{ item.url }}" target="_blank" class="social {{ item.class }}" data-title="{{ item.title | upcase }}">
         {% include {{ item.class | prepend: 'social/' | append: '.svg' }} %}
       </a>
     {% endfor %}
