@@ -4,6 +4,11 @@ section {
 		overflow: hidden;
 		overflow-y: auto;
 		div {
+			max-width: 800px;
+			@include mobile-only {
+				align-items: flex-start;
+				justify-content: flex-start;
+			}
 			div {
 				position: relative;
 				display: flex;
@@ -16,22 +21,25 @@ section {
 				h1 {
 					margin: 0;
 					padding: 0;
+					width: 100%;
 					color: rgba(#000, .6);
 					font-family: $baseff;
 					@include font-size(60px, 68px);
-					text-align: center;
+					text-align: left;
+					@include mobile-only {
+						@include font-size(20px, 28px);
+					}
 				}
 				p {
 					font-family: Arial;
 					@include font-size(14px, 20px);
 					color: darken($aboutColor, 40%);
-					text-align: center;
-					columns: 2 20vw;
+					columns: 2 360px;
 					column-gap: 40px;
 					column-rule: 2px solid darken($aboutColor, 40%);
 					text-align: left;
 					@include tablet-only {
-						columns: 3 20vw;
+						columns: 2 38vw;
 					}
 					@include mobile-only {
 						columns: 1 100vw;

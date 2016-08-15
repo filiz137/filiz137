@@ -28,6 +28,9 @@ social:
   - title: GitHub
     url: https://github.com/filiz137
     class: github
+  - title: Codepen
+    url: http://codepen.io/filiz137
+    class: codepen
 
 share:
   - title: Twitter
