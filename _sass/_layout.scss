@@ -61,6 +61,17 @@ main {
 	height: 100%;
 	background-color: $bgColor;
 	overflow: hidden;
+  cite.copy {
+    font-family: $baseff;
+		@include font-size(10px, $pagepad);
+		font-style: normal;
+		font-weight: $light;
+		color: $footerColor;
+    transform: rotate(90deg);
+    position: fixed;
+    right: 0;
+    bottom: 80px;
+  }
 }
 
 header {
@@ -112,6 +123,7 @@ header {
 		a {
 			margin: 0 0 0 10px;
 			padding: 0;
+      transition: color .3s linear;
 			&.social {
 				color: $headerColor;
 				fill: currentColor;
@@ -178,6 +190,7 @@ section {
   	justify-content: center;
   }
 }
+
 
 footer {
 	position: relative;

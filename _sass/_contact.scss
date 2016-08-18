@@ -1,8 +1,9 @@
 section {
 	&.contact {
-		background-color: $contactColor;
-		div {
-			.content {
+		// background-color: $contactColor;
+		.content {
+			max-width: 100%;
+			article{
 				display: flex;
 				flex-direction: column;
 				align-items: flex-start;
@@ -22,7 +23,7 @@ section {
 				h1 {
 					margin: 0;
 					padding: 0;
-					color: rgba(#000, .6);
+					color: $contactColor;
 					font-family: $baseff;
 					@include font-size(60px, 68px);
 					@include tablet-only {
@@ -35,6 +36,7 @@ section {
 				p {
 					margin: 0;
 					padding: 0;
+					max-width: 620px;
 					color: rgba(#000, .8);
 					font-family: $baseff;
 					@include font-size(14px, 20px);
@@ -100,7 +102,11 @@ section {
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
-				padding: 20px;
+				padding: 0;
+				margin-right: 20px;
+				height: 100%;
+				background: url('/img/whitewall.jpg') center center;
+				background-size: cover;
 				@include desktop-and-up {
 					flex: 1 1 100%;
 				}
@@ -120,7 +126,7 @@ section {
 						align-self: flex-end;
 					}
 				}
-			}	
+			}
 		}
 	}
 }
