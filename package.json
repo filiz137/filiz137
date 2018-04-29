@@ -1,0 +1,9 @@
+{
+  "name": "filizaltinturk.com",
+  "version": "2",
+  "description": "personal portfolio page",
+  "main": "index.js",
+  "repository": "https://github.com/filiz137/filiz137.github.io.git",
+  "author": "Filiz Altinturk - info@filizaltinturk.com",
+  "license": "MIT"
+}
