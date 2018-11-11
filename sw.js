@@ -1,8 +1,8 @@
 var CACHE = "cache-and-update";
 var precacheFiles = [
-    "./css",
-    "./img",
-    "./font"
+    "https://filizaltinturk.com/css",
+    "https://filizaltinturk.com/img",
+    "https://filizaltinturk.com/font"
 ];
 
 self.addEventListener("install", function (evt) {
