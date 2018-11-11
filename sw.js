@@ -1,6 +1,6 @@
 var CACHE = "cache-and-update";
 var precacheFiles = [
-    "https://filizaltinturk.com/css/main.css",
+    "https://filizaltinturk.com/css/*.css",
     "/img",
     "/font"
 ];
