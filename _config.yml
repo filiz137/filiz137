@@ -13,7 +13,7 @@ title: Filiz Altıntürk
 #   line in _config.yml. It will appear in your document head meta (for
 #   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://filizaltinturk.com" # the base hostname & protocol for your site
+url: "https://filizaltinturk.com" # the base hostname & protocol for your site
 
 social:
   - title: LinkedIn
@@ -35,23 +35,23 @@ social:
 share:
   - title: Twitter
     url: https://twitter.com/intent/tweet/?
-    text: text=Checkout Filiz Altinturk's Portfolio Page&url=http://filizaltinturk.com
+    text: text=Checkout Filiz Altinturk's Portfolio Page&url=https://filizaltinturk.com
     class: twitter
   - title: LinkedIn
     url: https://www.linkedin.com/shareArticle?mini=true&amp;
-    text: url=http://filizaltinturk.com&title=Checkout Filiz Altinturk's Portfolio Page&summary=Checkout Filiz Altinturk's Portfolio Page&source=http://filizaltinturk.com
+    text: url=https://filizaltinturk.com&title=Checkout Filiz Altinturk's Portfolio Page&summary=Checkout Filiz Altinturk's Portfolio Page&source=https://filizaltinturk.com
     class: linkedin
   - title: Whatsapp
     url: whatsapp://send/905549020202/?
-    text: text=Checkout Filiz Altinturk's Portfolio Page http://filizaltinturk.com
+    text: text=Checkout Filiz Altinturk's Portfolio Page https://filizaltinturk.com
     class: whatsapp
   - title: Pinterest
     url: https://pinterest.com/pin/create/button/?
-    text: url=http://filizaltinturk.com&media=http://filizaltinturk.com&summary=Checkout Filiz Altinturk's Portfolio Page
+    text: url=https://filizaltinturk.com&media=https://filizaltinturk.com&summary=Checkout Filiz Altinturk's Portfolio Page
     class: pinterest
   - title: Email
     url: mailto:?
-    text: subject=Filiz Altinturk filizaltinturk.com&body=Checkout Filiz Altinturk's Portfolio Page http://filizaltinturk.com
+    text: subject=Filiz Altinturk filizaltinturk.com&body=Checkout Filiz Altinturk's Portfolio Page https://filizaltinturk.com
     class: email
 
 # Build settings
