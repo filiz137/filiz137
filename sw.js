@@ -1,7 +1,9 @@
 var CACHE = "cache-and-update";
 var precacheFiles = [
-    "https://filizaltinturk.com/css/**/*",
-    "/img/**/*",
+    "https://filizaltinturk.com/css/main.css",
+    "/img/contact.png",
+    "/img/filiz-altinturk.png",
+    "/img/whitewall.jpg",
     "https://filizaltinturk.com/font/**/*"
 ];
 
