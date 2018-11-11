@@ -1,10 +1,10 @@
 var CACHE = "cache-and-update";
 var precacheFiles = [
-    "https://filizaltinturk.com/css/main.css",
+    "/css/main.css",
     "/img/contact.png",
     "/img/filiz-altinturk.png",
     "/img/whitewall.jpg",
-    "https://filizaltinturk.com/font/**/*"
+    "/font/nevis.woff2"
 ];
 
 self.addEventListener("install", function (evt) {
