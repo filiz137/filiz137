@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
-  <body>
-    <main>
-      {% include header.html %}
+{% include head.html %}
 
-      {{ content }}
+<body>
+  <main>
+    {% include header.html %}
 
-      {% include footer.html %}
+    {{ content }}
 
-      <cite class="copy">
-          &copy; 2016
-      </cite>
-    </main>
-  </body>
+    {% include footer.html %}
+
+    <cite class="copy">
+      &copy; 2016
+    </cite>
+  </main>
+  <script>
+    if (navigator.serviceWorker.controller) {
+      console.log('Hey active service worker found, no need to register')
+    } else {
+      navigator.serviceWorker.register('sw.js', {
+        scope: './'
+      }).then(function (reg) {
+        console.log('Service worker has been registered for scope:' + reg.scope);
+      });
+    }
+  </script>
+</body>
+
 </html>
