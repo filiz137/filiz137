@@ -2,11 +2,8 @@
 
 var CACHE = 'pwabuilder-precache';
 var precacheFiles = [
-    "/css/main.css",
-    "/img/contact.png",
-    "/img/filiz-altinturk.png",
-    "/img/whitewall.jpg",
-    "/font/nevis.woff2"
+    "/css/**.css",
+    "/img/**.*"
 ];
 
 //Install stage sets up the cache-array to configure pre-cache content
