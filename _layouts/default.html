@@ -15,6 +15,7 @@
     </cite>
   </main>
   <script>
+    if ("serviceWorker" in navigator) {
         if (navigator.serviceWorker.controller) {
           console.log("Hey active service worker found, no need to register")
         } else {
@@ -26,6 +27,7 @@
             console.log(err);
           });
         }
+      }
   </script>
 </body>
 
