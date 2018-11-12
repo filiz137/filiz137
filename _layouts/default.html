@@ -17,7 +17,7 @@
   <script>
       if (!("serviceWorker" in navigator)) {
         console.log("Service Worker not supported");
-        return
+        return;
       } else {
         if (navigator.serviceWorker.controller) {
           console.log("Hey active service worker found, no need to register")
